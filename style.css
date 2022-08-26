@@ -16,6 +16,7 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 .logo {
@@ -44,11 +45,13 @@ li {
     display: flex;
     align-items: center;
     padding-left: 5px;
-    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 4px;
     border-radius: 2px;
     box-sizing: border-box;
-    background-color: #dcdcdc;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
 }
 
 .enviar-mensagens {
@@ -95,9 +98,19 @@ input {
 }
 
 .reservado {
-    background-color: pink;
+    background-color: #FFDEDE;
 }
 
 .saiu-entrou {
-    background-color: #FFFFFF;
+    background-color: #dcdcdc;
+}
+
+.cor-horario {
+    margin-right: 3px;
+    color: #AAAAAA;
+}
+
+.negrito-nome {
+    margin-right: 3px;
+    color: black;
 }
