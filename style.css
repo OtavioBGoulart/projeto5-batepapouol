@@ -39,18 +39,17 @@ header {
 li {
     font-family: "Roboto";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 370;
     font-size: 14px;
     line-height: 16px;
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 4px;
+    /*display: flex;
+    align-items: center;*/
+    word-wrap: break-word;
+    padding: 10px;
+    margin-bottom: 8px;
     border-radius: 2px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     background-color: #FFFFFF;
 }
 
@@ -113,4 +112,5 @@ input {
 .negrito-nome {
     margin-right: 3px;
     color: black;
+    font-weight: bold;
 }
