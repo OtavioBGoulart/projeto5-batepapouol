@@ -69,9 +69,12 @@ function cadastro() {
     pedidoCadastro.catch(nomeJaExiste);
 }
 
-function nomeJaExiste() {
-    alert("Esse nome já existe, digite outro");
-    cadastro();
+function nomeJaExiste(erro) {
+    console.log(erro.response);
+    if (erro.response.status == 400) {
+        alert("Esse nome já existe, digite outro");
+        cadastro();
+    }
 }
 
 function manterConexao() {
@@ -88,6 +91,9 @@ function enviarMensagem() {
     let selecionarMensagem = document.querySelector("input");
     let mensagemSelecionada = selecionarMensagem.value;
     console.log(mensagemSelecionada);
+    if (mensagemSelecionada == "") {
+        return
+    }
     let mensagem = {
         from: cadastroNome,
         to: "Todos",
@@ -102,7 +108,7 @@ function enviarMensagem() {
 }
 
 function errorMensagem() {
-    window.location.reload();
+    Location.reload();
 }
 
 
