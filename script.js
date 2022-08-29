@@ -44,7 +44,7 @@ function renderizarMensagens(dados) {
         } else if (mensagens[i].to == "Todos") {
             containerMensagens.innerHTML = containerMensagens.innerHTML + `
         <li>
-        <span class="cor-horario">(${mensagens[i].time})</span> <span class="negrito-nome"> <strong>${mensagens[i].from}</strong> </span> para <span class="negrito-nome"> <strong>todos</strong> </span>: ${mensagens[i].text}
+        <span class="cor-horario">(${mensagens[i].time})</span> <span class="negrito-nome"> <strong>${mensagens[i].from}</strong> </span> para <span class="negrito-nome"> <strong>todos:</strong> </span> ${mensagens[i].text}
         </li>  `
 
         }
@@ -105,6 +105,4 @@ function errorMensagem() {
     window.location.reload();
 }
 
-//teste
-//ok
 
